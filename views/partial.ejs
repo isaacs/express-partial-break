@@ -1,0 +1,7 @@
+<p>Messages:
+
+<pre><%= JSON.stringify(messages, null, 2) %></pre>
+
+<% Object.keys(messages).forEach(function (m) {
+  delete messages[m]
+}) %>
